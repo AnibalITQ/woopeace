@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "TAN nimbus";
-    src: url("../fonts/TAN-NIMBUS.ttf") format("truetype");
+    src: url("/fonts/TAN-NIMBUS.ttf") format("truetype");
     /* Ruta a la fuente y su formato */
     font-weight: normal;
     font-style: normal;
@@ -110,6 +110,7 @@ body {
     border-radius: 20px;
     cursor: pointer;
     background-color: #cd91de;
+
     border: none;
     text-decoration: none;
     margin: 10px;
