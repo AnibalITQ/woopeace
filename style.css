@@ -1,6 +1,6 @@
 @font-face {
     font-family: "TAN nimbus";
-    src: url("/fonts/TAN-NIMBUS.ttf") format("truetype"); /* Ruta a la fuente y su formato */
+    src: url("/TAN-NIMBUS.ttf") format("truetype"); /* Ruta a la fuente y su formato */
     font-weight: normal;
     font-style: normal;
   }
