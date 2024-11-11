@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "TAN nimbus";
+    src: url("../fonts/TAN-NIMBUS.ttf") format("truetype"); /* Ruta a la fuente y su formato */
+    font-weight: normal;
+    font-style: normal;
+  }
+body {
+    font-family: "TAN nimbus",Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #faf2e9;
+  }
+  header {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  #productos, #carrito {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .producto, .carrito-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #cd91de;
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  
+  .galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .producto-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #aec78b;
+    transition: transform 0.2s ease;
+  }
+  
+  .producto-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .producto-card img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card-content {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .carousel-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: none;
+  }
+  
+  .carousel-container img.active {
+    display: block;
+  }
+  
+  h3,a,p{
+    color: #204720;
+  }
+
+  .carrito-icono {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .carrito-contador {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  .team-image{
+    width: 500px;
+    margin-left: 30px;
+  }
+
+  .faq-section, .about-us{
+    margin-left:30px;
+  }
+
+  /* Estilo para la sección FAQ */
+.faq-section, .about-us{
+  background-color: #f4f4f9;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h3 {
+  font-size: 2rem;
+  color: #204720;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+}
+
+.faq-item h4 {
+  font-size: 1.2rem;
+  color: #204720;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Opcional: Añadir iconos de preguntas y respuestas */
+.faq-item h4::before {
+  content: "❓ ";
+  color: #cd91de;
+  font-weight: bold;
+}
+
+.faq-item p::before {
+  content: "💬 ";
+  color: #cd91de;
+  font-weight: bold;
+}
+
+/* Estilo para la sección de contacto */
+#contacto {
+  background-color: #e8f5e9;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#contacto h3 {
+  font-size: 2rem;
+  color: #204720;
+  margin-bottom: 20px;
+}
+
+#contacto p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+#contacto p strong {
+  color: #204720;
+}
+
+#contacto a {
+  color: #cd91de;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contacto a:hover {
+  text-decoration: underline;
+  color: #b06cc7;
+}
+
+/* Añadir íconos opcionales */
+#contacto p::before {
+  content: "📞 ";
+  font-size: 1.2rem;
+  color: #cd91de;
+}
+
+#contacto p:nth-of-type(2)::before {
+  content: "📸 ";
+}
+
+#contacto p:nth-of-type(3)::before {
+  content: "📍 ";
+}

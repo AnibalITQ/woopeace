@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "TAN nimbus";
+    src: url("../fonts/TAN-NIMBUS.ttf") format("truetype");
+    /* Ruta a la fuente y su formato */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "TAN nimbus";
+    margin: 0;
+    padding: 0;
+    background-color: #faf2e9;
+}
+
+.header {
+    background-color: #617755;
+    padding: 1rem;
+    color: white;
+}
+
+.carrito-icono {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 40%) minmax(0, 60%);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.gallery-container {
+    position: relative;
+    background: #f3e5f5;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.main-image {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.thumbnail-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.thumbnail.active {
+    border-color: #e77600;
+}
+
+.product-info {
+    background: #f3e5f5;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.product-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.8rem;
+    color: #B12704;
+    margin: 1rem 0;
+}
+
+.buy-box {
+    background: #f3e5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #cd91de;
+    border: none;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.btn-primary {
+    background:#cd91de;;
+}
+
+
+.care-instructions {
+    margin: 2rem 0;
+}
+
+.care-list {
+    list-style: none;
+    padding: 1rem;
+}
+
+.care-item {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.care-item::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #232f3e;
+}
+
+.reviews-section {
+    margin-top: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.star-rating {
+    color: #FFA41C;
+    font-size: 1.2rem;
+}
+
+.review-card {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+.home {
+    display: inline-flex;
+    align-items: center;
+    margin-left: -10px;
+}
+
+.carrito-icono {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.carrito-contador {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #cd91de;
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}

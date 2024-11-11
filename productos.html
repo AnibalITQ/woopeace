@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Woopeace</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a href="carrito.html" class="carrito-icono">
+    🛒 <span id="carrito-contador" class="carrito-contador">0</span>
+  </a>
+  <header>
+    <h1>Nuestros Peluches</h1>
+    <a href="index.html" class="btn">Inicio</a>
+  </header>
+  <section id="productos" class="galeria">
+    <!-- Los productos se generan con JavaScript -->
+  </section>
+  <!-- HTML para el popup de selección de aromas -->
+<div id="aromaModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); align-items: center; justify-content: center;">
+  <div style="background: white; padding: 20px; border-radius: 8px; text-align: center;">
+    <h3>Selecciona un aroma</h3>
+    <p id="modalTitle">Selecciona un aroma para el producto</p>
+    <div id="aromaOptions">
+      <label><input type="radio" name="aroma" value="Romero"> Romero</label><br>
+      <label><input type="radio" name="aroma" value="Lavanda"> Lavanda</label><br>
+      <label><input type="radio" name="aroma" value="Mandarina"> Mandarina</label><br>
+    </div>
+    <button onclick="confirmarAroma()">Confirmar</button>
+  </div>
+</div>
+
+</body>
+</html>
